@@ -4,7 +4,16 @@
         <div class="zuo"></div>
 
         <!-- 右边 -->
-        <div class="you"></div>
+        <div class="you">
+            <!-- 上面 -->
+            <div class="sm">
+                
+            </div>
+            <!-- 下面 -->
+            <div class="xm">
+
+            </div>
+        </div>
     </div>
 
 
@@ -34,6 +43,18 @@ export default {
             height: 1000px;
             background-color: #0094ff;
             margin: -300px 265px;
+
+            .sm{
+                width: 765px;
+                height: 140px;
+                background-color: red;
+            }
+
+            .xm{
+                width: 765px;
+                height: 1000px;
+                background-color: #97a87f;
+            }
         }
     }
 </style>
