@@ -1,7 +1,7 @@
 <template>
     <div class="lygl">
         <!-- 左边 -->
-        <div class="zuo"></div>
+        <Zuo/>
 
         <!-- 右边 -->
         <div class="you">
@@ -20,23 +20,21 @@
 </template>
 
 <script>
+
+import Zuo from "@/components/post/zuo.vue";
+
 export default {
-    
+    components: {
+        Zuo,
+    }
 }
 </script>
 
 <style lang="less" scoped>
     .lygl{
         width: 1000px;
-        margin: 0 auto;
+        margin: 15px auto;
         // background-color: #000;
-        .zuo{
-            width: 265;
-            height: 300px;
-            background-color: #333;
-            margin: 0 0;
-        }
-
 
         .you{
             width: 735px;
@@ -50,7 +48,7 @@ export default {
                 background-color: red;
             }
 
-            .xm{
+            .xm{ 
                 width: 765px;
                 height: 1000px;
                 background-color: #97a87f;
